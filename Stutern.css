@@ -184,23 +184,25 @@ section img{
 iframe{
     width: 100%;
     height: 500px;
-
+    border-radius: 15px;
+}
+.menu{
+    margin-top: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 .menu h1{
     color:rgb(27, 23, 66) ;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    font-weight: 600px;
+    font-weight: 600;
     font-size: 50px;
-    max-width: 500px;
-    margin-left: 400px;
 }
 .menu p{
-    color:black;
+    color:rgba(0, 0, 0, 0.568);
     font-size: 15px;
     font-weight: 600;
-    margin-left: 300px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .container{
     width: 97%;
@@ -208,10 +210,12 @@ iframe{
     flex-wrap: wrap;
     justify-content: space-around;
     position: relative;
+    background-color: purple;
     padding: 20px;
 }
 .image-container{
     width: 23%;
+    /* background-color: yellow; */
     margin: 10px;
     text-align: center;
     display: block;
@@ -219,7 +223,7 @@ iframe{
 .image-container img{
     height: 150px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 100%;
 }
 .image-container p{
     font-size: 18px;
@@ -366,7 +370,7 @@ iframe{
 
 @media (max-width: 700px) {
     body{
-        background-color: aqua;
+        background-color: #fff;
     }
     .features img{
         display: none;
@@ -431,7 +435,71 @@ iframe{
         height: 50px;
         margin-top: 20px;
     }
+    section {
+        padding: 10px;
+        margin:0;
+        background-color: #fff;
+        display: block;
+     }
+    .header{
+        padding-left: 30px;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .h1{
+        color: aqua;
+    }
+    .header h1 {
+        /* color:rgb(27, 23, 66) ; */
+        font-size: 50px;
+        max-width: 100;
+        line-height: 70px;
+        font-weight: 600;
+        margin-left: 0;
+        margin-bottom: 0;
+        font-family: epilogue, sans-serif !important;
+        color: #1b1642 !important;
     
+     }
+     .header p{
+        color: #50535a;
+        padding: 20px 0;
+        margin-left: 0;
+        font-size: 20px;
+     }
+     .header button{
+        border-radius: 10px;
+        border: none;
+        background-color: #1bd3c7;
+        color: black;
+        padding: 15px 30px;
+        cursor: pointer;
+        outline: 0;
+        width: 150px;
+        height: 50px;
+     }
+     section img{
+        width: 100%;
+        height: 400px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .menu{
+        width: 100%;
+        align-items: center;
+    }
+    .menu h1{
+        color:rgb(27, 23, 66) ;
+        font-weight: 700;
+        font-size: 30px;
+        font-family: epilogue, sans-serif !important;
+    }
+    .menu p{
+        color:rgba(0, 0, 0, 0.568);
+        font-size: 15px;
+        font-weight: 600;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
 }
 @media only screen and (max-width:500px) {
     body{
