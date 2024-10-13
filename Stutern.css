@@ -22,6 +22,7 @@ nav {
     border: none;
     display: flex;
     position: sticky;
+    z-index: 2;
     top: 0;
     align-items: center;
     height: 80px;
@@ -297,7 +298,6 @@ iframe {
     text-align: center;
     width: 100%;
     height: fit-content;
-    background-color: #1bd3c7;
 }
 
  .blue h1 {
@@ -318,29 +318,34 @@ iframe {
 }
 
 .green {
-    background-color: rgb(27, 211, 199);
-    width: 1200px;
-    height: 500px;
-    margin-left: 80px;
-    margin-top: 150px;
-    border-radius: 15px;
-    margin-bottom: 150px;
-}
-
-.green .has h2 {
-    width: 800px;
-    font-size: 50px;
+    width: 100%;
+    height: fit-content;
     text-align: center;
-    margin-left: 100px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.class{
+    padding: 150px 10px;
+    background-color: aqua;
+    border-radius: 20px;
+    margin-left: 5%;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
 }
 
+.green h2 {
+    font-size: 50px;
+    color: #1c1642;
+}
+.button{
+    margin-top: 100px;
+}
 .green .white {
     background-color: white;
     width: 200px;
     height: 60px;
-    margin-top: 150px;
     border: none;
-    margin-left: 300px;
 }
 
 .green .pink {
@@ -348,8 +353,6 @@ iframe {
     color: white;
     width: 200px;
     height: 60px;
-    margin-top: 150px;
-    margin-left: 5px;
 }
 
 .last {
@@ -358,50 +361,42 @@ iframe {
     height: 500px;
     overflow: none;
 }
-
+.lastt{
+    padding-top: 100px;
+    width:90%;
+    /* background-color: #1bd3c7; */
+    display: flex;
+    margin-left: 5%;
+}
+.group{
+    width: 50%;
+}
+.last-step{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: yellowgreen; */
+}
 .last .group img {
-    margin-left: 100px;
-    margin-right: 100px;
+    width: 20%;
 }
 
-.last h4 {
+ .last h4 {
     color: white;
-    margin-left: 100px;
-    margin-top: 10px;
-    line-height: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 .last p {
-    color: white;
-    width: 150px;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.733);
     font-size: 20px;
     line-height: 35px;
     gap: 210px;
-    align-items: center;
-    margin-left: 100px;
 }
 
 .last b {
     color: #797492;
-}
-
-.last .program {
-    margin-left: 700px;
-    margin-top: -100px;
-}
-
-.last .courses {
-    margin-left: 900px;
-    margin-top: -315px;
-}
-
-.last .company {
-    margin-left: 1100px;
-    margin-top: -175px;
-}
-
-.last p {
-    margin-left: 10px;
 }
 
 
@@ -616,6 +611,35 @@ iframe {
         margin-top: 50px;
         margin-bottom: 50px;
         width: 100%;
+    }
+    .button .white{
+        margin-bottom: 10px;
+    }
+    .last {
+        background-color: #1b1642;
+        width: 100%;
+        height: fit-content;
+        overflow: none;
+    }
+    .lastt{
+        padding-top: 100px;
+        width:90%;
+        /* background-color: #1bd3c7; */
+        display: block;
+        margin-left: 5%;
+    }
+    .last-step{
+        margin-top: 20px;
+        width: 100%;
+        display: block;
+        justify-content: space-evenly;
+        /* background-color: yellowgreen; */
+    }
+    .group{
+        width: 100%;
+    }
+    .last .group img {
+        width: 50%;
     }
 }
 
